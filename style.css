@@ -1,0 +1,63 @@
+html {
+    font-size: 10px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.header {
+    font-family: 'Skranji', cursive;
+    font-weight: normal;
+    width: 24rem;
+    text-align: center;
+    margin: 2%;
+    font-size: 3rem;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-holder {
+    width: 46%;
+    margin: 2%;
+}
+
+
+.card {
+    padding: 5%;
+    border-bottom: 4px solid grey;
+    box-shadow: 0 0.1rem 2rem 0.1rem grey;
+    background-color: white;
+}
+
+.card__text {
+    text-align: left;
+    font-size: 1.6rem;
+    margin: 5% 0;
+}
+
+.card__photo-credits {
+    font-style: italic;
+    font-size: 1.2rem;
+    float: right;
+}
+
+.card-img img {
+    width: 100%;
+}
+
+.card-holder:nth-child(odd):hover {
+    transition: all 1s;
+    transform: scale(1.05) rotate(-3deg);
+}
+.card-holder:nth-child(even):hover {
+    transition: all 1s;
+    transform: scale(1.05) rotate(3deg);
+}
