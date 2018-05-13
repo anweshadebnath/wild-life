@@ -24,12 +24,6 @@ html {
     justify-content: center;
 }
 
-.card-holder {
-    width: 46%;
-    margin: 2%;
-}
-
-
 .card {
     padding: 5%;
     border-bottom: 4px solid grey;
@@ -38,7 +32,7 @@ html {
 }
 
 .card__text {
-    text-align: left;
+    text-align: center;
     font-size: 1.6rem;
     margin: 5% 0;
 }
@@ -57,7 +51,76 @@ html {
     transition: all 1s;
     transform: scale(1.05) rotate(-3deg);
 }
+
 .card-holder:nth-child(even):hover {
     transition: all 1s;
     transform: scale(1.05) rotate(3deg);
 }
+
+
+
+/* Extra small devices (phones, 599px and down) */
+
+@media only screen and (max-width: 599px) {
+    .card-holder {
+        width: 85%;
+        margin: 2%;
+    }
+    .card {
+        padding-bottom: 10%;
+    }
+    .card__photo-credits {
+        font-size: 1.8rem;
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+    .card-holder {
+        width: 44%;
+        margin: 2%;
+    }
+    .card {
+        padding-bottom: 10%;
+    }
+}
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    html {
+        font-size: 12px;
+    }
+    .card-holder {
+        width: 48%;
+        margin: 1%;
+    }
+
+    .card__photo-credits {
+        font-size: 1.4rem;
+    }
+}
+
+
+
+/*Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    html {
+        font-size: 14px;
+    }
+    .card-holder {
+        width: 31%;
+        margin: 1%;
+    }
+}
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {}
